@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters</title>
+    <link href="style.css" rel="stylesheet" /> </head>
+    
+</head>
+ <body id="body"> 
+       
+
+        <a href="index.html" id="popAnchor" >
+            <img id="pop"  alt="pic" src="imges/me.gif" >
+        </a>
+
+        <a href="index.html" id="aliceAnchor">
+            <img id="alice"  alt="pic" src="imges/me2.gif" >
+        </a>
+
+
+
+
+
+
+
+    <style>
+        #body{
+            background-image: url("imges/water-20.gif");
+            background-size: cover;
+            background-repeat: no-repeat;            
+            position: relative;
+
+        }
+        #char{
+            position: absolute;
+            height: 40%;
+            top: 30px;
+            left: 55%;
+
+        }
+        #char2{
+            position: absolute;
+            height: 40%;
+            top: 30px;
+            margin-left: 200px;
+
+        }
+    </style>
+
+
+
+    <script>
+
+        var pop = document.getElementById('pop');
+        var alice = document.getElementById('alice');
+        var popSrc = pop.getAttribute('src');
+        var aliceSrc =  alice.getAttribute('src');
+        
+
+        pop.onclick = function() {
+            localStorage.setItem("selected_character",popSrc);
+        }
+
+        alice.onclick = function() {
+            localStorage.setItem("selected_character",aliceSrc);
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

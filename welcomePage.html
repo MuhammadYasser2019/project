@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fish Hunter</title>
+    <link href="style.css" rel="stylesheet" /> </head>
+    <style>
+        #body{
+            background-image: url("imges/water-20.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #headDiv{
+            position: absolute;
+            top:130px ;
+            width: 400px;
+            margin-left: calc(50% - 200px);
+
+        }
+
+        #head{
+            font-size: 55px;
+            text-align: center;
+            font-family:cursive;
+            text-shadow: 5px 5px 5px rgb(0, 82, 136);
+            
+
+        }
+        .content{
+            position: absolute;
+            top: 240px;
+            width: 500px;
+            margin-left: calc(50% - 330px);
+
+        }
+        .myButton{
+            background-color:#61c5f3ab;
+            border:5px solid #176ea0;
+            border-radius:10px;color:#005485;
+            display:inline-block;
+            font-family:cursive;
+            font-size:35px;
+            line-height:44px;
+            text-align:center;
+            text-decoration:none;
+            width:550px;
+            text-shadow: 3px 3px 3px rgb(0, 112, 177);
+
+            -webkit-text-size-adjust:none;
+        }
+    </style>
+</head>
+ <body id="body"> 
+        <div id ="headDiv">
+        <span id="head">Fish Hunter</span>  
+        </div>
+    <div class="content">
+            <a href="index.html" class="myButton" id="startBtn" onclick="newIndex()">Start</a>
+            <br><br>
+            <a href="how_to_play.html" class="myButton">How To play</a>
+            <br><br>
+            <a href="Characters.html" class="myButton">Character</a>
+            <br><br>
+            <a href="#" class="myButton" type="button" value="Close this window" onclick="self.close()"> Exit</a>
+        
+    </div>
+
+    <script src="script2.js"></script>
+    
+</body>
+</html>
