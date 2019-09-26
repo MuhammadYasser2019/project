@@ -102,7 +102,7 @@ function start() {
 
     function left() {
         if (game_over === false && parseInt(fish.offsetLeft) > 0) {
-            fish.style.left = parseInt(fish.offsetLeft) - 5 + "px"
+            fish.style.left = parseInt(fish.offsetLeft) - 8 + "px"
             move_left = requestAnimationFrame(left);
         }
     }
@@ -110,7 +110,7 @@ function start() {
     function right() {
 
         if (game_over === false && parseInt( fish.offsetLeft ) < container_width - fish_width) {
-            fish.style.left = parseInt(fish.offsetLeft) + 5 +"px";
+            fish.style.left = parseInt(fish.offsetLeft) + 8 +"px";
             move_right = requestAnimationFrame(right);
            
         }
