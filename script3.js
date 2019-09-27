@@ -13,7 +13,7 @@ function start() {
     var fishImg = document.getElementById('myFish');
     
     // for selecting character 
-    // fishImg.src = localStorage.getItem("selected_character");
+    fishImg.src = localStorage.getItem("selected_character");
     
     var levelNum = document.getElementById("levelNum"); 
 
